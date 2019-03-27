@@ -1,7 +1,6 @@
 set number
 set relativenumber
 syntax on
-inoremap kj <esc>
 
 " Tab spaces fix
 set tabstop=4       " The width of a TAB is set to 4.
