@@ -4,6 +4,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'kaicataldo/material.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 let g:lightline = { 'colorscheme': 'material_vim' }
@@ -14,6 +16,9 @@ syntax enable
 set background=dark
 colorscheme material
 
+" To avoid needing to save before switching buffers
+set hidden
+
 " Tab spaces fix
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
@@ -23,11 +28,18 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
-" Lightline fix
-set laststatus=2
+set laststatus=2 " Lightline fix
+
+" Open splits to the right and bottom
+set splitbelow
+set splitright
 
 " Mappings
 nmap <F6> :NERDTreeToggle<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Adding true colors code
 if (has("nvim"))
