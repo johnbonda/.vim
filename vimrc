@@ -6,18 +6,23 @@ Plug 'kaicataldo/material.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'lifepillar/vim-solarized8'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
-let g:lightline = { 'colorscheme': 'material_vim' }
-let g:material_theme_style = 'dark'
+" let g:lightline = { 'colorscheme': 'material_vim' }
+" let g:material_theme_style = 'default'
 
 set relativenumber
-syntax enable
+set number
+syntax on
 set background=dark
-colorscheme material
+colorscheme solarized
 
 " To avoid needing to save before switching buffers
-set hidden
+"set hidden
 
 " Tab spaces fix
 set tabstop=4       " The width of a TAB is set to 4.
