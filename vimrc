@@ -10,13 +10,20 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'lifepillar/vim-solarized8'
 Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-surround'
+Plug 'kien/ctrlp.vim'
 call plug#end()
 
-" let g:lightline = { 'colorscheme': 'material_vim' }
+" Setting up a seperate directory for vim swap files
+set swapfile
+set dir=~/.vim/vimSwapFiles
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
 " let g:material_theme_style = 'default'
 
 set relativenumber
-set number
 syntax on
 set background=dark
 colorscheme solarized
