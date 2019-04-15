@@ -6,7 +6,7 @@ Plug 'kaicataldo/material.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'lifepillar/vim-solarized8'
 Plug 'altercation/vim-colors-solarized'
@@ -19,14 +19,15 @@ set swapfile
 set dir=~/.vim/vimSwapFiles
 
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'powerline',
       \ }
-" let g:material_theme_style = 'default'
+let g:material_theme_style = 'dark'
 
+set number
 set relativenumber
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme material
 
 " To avoid needing to save before switching buffers
 "set hidden
