@@ -19,7 +19,7 @@ set swapfile
 set dir=~/.vim/vimSwapFiles
 
 let g:lightline = {
-      \ 'colorscheme': 'powerline',
+      \ 'colorscheme': 'material_vim',
       \ }
 let g:material_theme_style = 'dark'
 
