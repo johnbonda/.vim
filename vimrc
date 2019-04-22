@@ -54,9 +54,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"To copy to clipboard from vim (Install vim-gtk)
-map <C-c> "+y<CR> 
-
 " Adding true colors code
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
